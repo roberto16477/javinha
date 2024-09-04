@@ -10,27 +10,11 @@ public class Bola {
         this.circunferencia = circ;
     }
 
-    public void setCor(String c) {
+    public void trocaCor(String c) {
         this.cor = c;
     }
 
-    public String getCor() {
+    public String mostraCor() {
         return this.cor;
-    }
-
-    public void setMat(String mat) {
-        this.material = mat;
-    }
-
-    public String getMat() {
-        return this.material;
-    }
-
-    public void setCirc(double circ) {
-        this.circunferencia = circ;
-    }
-
-    public double getCirc() {
-        return this.circunferencia;
     }
 }
