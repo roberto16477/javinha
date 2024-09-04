@@ -1,9 +1,9 @@
 package aula_08_30;
 public class Main{
     public static void main(String[] args) {
-        Bola primeira = new Bola("vermelho", "plástico", 20);
-        System.out.println("Cor Original: " + primeira.mostraCor());
-        primeira.trocaCor("amarelo");
-        System.out.println("Nova cor: " + primeira.mostraCor());
+        Bola b1 = new Bola("vermelho", "plástico", 20);
+        System.out.println("Cor Original: " + b1.mostraCor());
+        b1.trocaCor("amarelo");
+        System.out.println("Nova cor: " + b1.mostraCor());
     }
 }
