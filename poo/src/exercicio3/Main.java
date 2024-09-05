@@ -11,6 +11,5 @@ public class Main {
         p1.envelhecer();
         System.out.println("Nova idade: " + p1.idade);
         System.out.println("Nova altura: " + p1.altura);
-
     }
 }
