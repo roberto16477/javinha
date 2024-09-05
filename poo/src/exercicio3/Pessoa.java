@@ -12,7 +12,22 @@ public class Pessoa {
         this.idade = i;
     }
 
-    public void emagrecer(double p){
-        this.peso = p - 1;
+    public void emagrecer(){
+        this.peso -= 1.0;
+    }
+
+    public void engordar(){
+        this.peso += 1.0;
+    }
+
+    public void crescer(){
+        this.altura += 0.05;
+    }
+
+    public void envelhecer(){
+        if (idade < 21){
+            this.crescer();
+        }
+        this.idade += 1;
     }
 }
