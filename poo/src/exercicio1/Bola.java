@@ -1,4 +1,4 @@
-package aula_08_30;
+package exercicio1;
 
 public class Bola {
     private String cor, material;

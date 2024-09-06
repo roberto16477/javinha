@@ -1,4 +1,4 @@
-package aula_08_30;
+package exercicio1;
 public class Main{
     public static void main(String[] args) {
         Bola b1 = new Bola("vermelho", "plástico", 20);
