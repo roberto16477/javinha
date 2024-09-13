@@ -17,4 +17,12 @@ public class Especial extends Corrente {
         }
     } 
 
+    public int getLimite() {
+        return limite;
+    }
+
+    public void setLimite(int limite) {
+        this.limite = limite;
+    }
+
 }
