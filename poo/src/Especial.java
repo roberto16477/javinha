@@ -1,7 +1,7 @@
-public class especial {
+public class Especial {
     private int limite;
 
-    public especial(int num, double sal, String cli, int lim) {
+    public Especial(int num, double sal, String cli, int lim) {
         super(num, sal, cli);
         this.limite = lim;
     }
