@@ -1,10 +1,9 @@
 package banco;
 
-public class Poupanca {
-
+public class Poupanca extends Corrente {
     private double saldominimo;
 
-    public CPoupanca(int num, double sal, String cli, double salmin) {
+    public Poupanca(int num, double sal, String cli, double salmin) {
         super(num, sal, cli);
         this.saldominimo = salmin;
     }
@@ -20,4 +19,15 @@ public class Poupanca {
             System.out.println("Saldo Insuficiente");
         }
     }
+
+    public void atualizarSaldo(){
+        super.setSaldo(super.getSaldo() + (this.saldominimo * 0.05));
+        this.saldominimo = super.getSaldo();
+       
+        } 
+
+        public double getSaldominimo(){
+            return this.saldominimo;
+            }
+           
 }
