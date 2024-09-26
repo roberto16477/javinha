@@ -6,7 +6,6 @@ public class Empregado {
     String email;
     float salario;
 
-    // Construtor da classe Empregado
     public Empregado(int cod, String nom, String mail, float sal) {
         this.codigo = cod;
         this.nome = nom;
@@ -14,7 +13,6 @@ public class Empregado {
         this.salario = sal;
     }
 
-    // Método para aplicar o aumento de salário
     public void aumentoSalarial(int percentual) {
         this.salario += this.salario * (percentual / 100.0);
     }

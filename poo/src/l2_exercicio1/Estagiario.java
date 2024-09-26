@@ -9,7 +9,6 @@ public class Estagiario extends Empregado {
         this.descontos = desc;
     }
 
-    // Método de aumento salarial para o Estagiário
     @Override
     public void aumentoSalarial(int percentual) {
         this.salario += this.salario * (percentual / 100.0) - this.descontos;
