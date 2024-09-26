@@ -1,10 +1,10 @@
 package l2_exercicio1;
 
 public class Empregado {
-    protected int codigo;
-    protected String nome;
-    protected String email;
-    protected float salario;
+    int codigo;
+    String nome;
+    String email;
+    float salario;
 
     // Construtor da classe Empregado
     public Empregado(int cod, String nom, String mail, float sal) {
@@ -14,13 +14,36 @@ public class Empregado {
         this.salario = sal;
     }
 
-    // Método para obter o salário atual
+    // Método para aplicar o aumento de salário
+    public void aumentoSalarial(int percentual) {
+        this.salario += this.salario * (percentual / 100.0);
+    }
+
     public float getSalario() {
         return this.salario;
     }
 
-    // Método para aplicar o aumento de salário
-    public void aumentoSalarial(int percentual) {
-        this.salario += this.salario * (percentual / 100.0);
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

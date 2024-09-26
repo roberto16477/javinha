@@ -1,7 +1,7 @@
 package l2_exercicio1;
 
 public class Chefe extends Empregado {
-    private float beneficio;
+    float beneficio;
 
     // Construtor da classe Chefe
     public Chefe(int cod, String nom, String mail, float sal, float ben) {

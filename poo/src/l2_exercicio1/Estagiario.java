@@ -1,7 +1,7 @@
 package l2_exercicio1;
 
 public class Estagiario extends Empregado {
-    private int descontos;
+    int descontos;
 
     // Construtor da classe Estagiário
     public Estagiario(int cod, String nom, String mail, float sal, int desc) {
