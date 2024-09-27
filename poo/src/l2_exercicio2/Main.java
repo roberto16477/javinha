@@ -7,8 +7,8 @@ public class Main {
         ingresso.imprimeValor();
 
         // Testando a classe VIP
-        VIP ingressoVIP = new VIP(50.0f, 30.0f);
-        System.out.println("Valor do ingresso VIP: R$ " + ingressoVIP.getValorVIP());
+        Vip ingressoVIP = new Vip(50.0f, 30.0f);
+        System.out.println("Valor do ingresso VIP: R$ " + ingressoVIP.getValor());
 
         // Testando a classe Normal
         Normal ingressoNormal = new Normal(50.0f);
@@ -22,6 +22,6 @@ public class Main {
 
         // Testando a classe Camarote Superior
         CamaroteSuperior camaroteSuperior = new CamaroteSuperior(50.0f, 30.0f, 20.0f);
-        System.out.println("Valor do ingresso Camarote Superior: R$ " + camaroteSuperior.getValorVIP());
+        System.out.println("Valor do ingresso Camarote Superior: R$ " + camaroteSuperior.getValor());
     }
 }
