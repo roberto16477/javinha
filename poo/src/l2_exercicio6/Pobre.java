@@ -6,6 +6,6 @@ public class Pobre extends Pessoa {
     }
 
     public void trabalha() {
-        System.out.println(this.nome + " está trabalhando.");
+        System.out.println(this.nome + " está trabalhando!");
     }
 }
