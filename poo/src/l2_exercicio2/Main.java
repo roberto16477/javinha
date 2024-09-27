@@ -16,7 +16,6 @@ public class Main {
         camaroteInferior.imprimeValor();
         camaroteInferior.imprimeLocalizacao();
 
-        // Testando a classe Camarote Superior
         CamaroteSuperior camaroteSuperior = new CamaroteSuperior(50.0f, 70.0f, 20.0f);
         System.out.println("Valor do ingresso Camarote Superior: R$ " + camaroteSuperior.getValor());
     }
