@@ -6,7 +6,6 @@ public class Cachorro extends Animal {
         super(nome); // Chama o construtor da classe Animal
     }
 
-    // Método para o cachorro latir
     public String late() {
         return this.nome + ": Au Au!";
     }
