@@ -8,7 +8,6 @@ public class CamaroteSuperior extends Vip{
         this.valorAdicionalSuperior = valorAdicionalSuperior;
     }
 
-    // Método que retorna o valor do ingresso do camarote superior (valor do VIP + adicional)
     @Override
     public float getValor() {
         return super.getValor() + this.valorAdicionalSuperior;

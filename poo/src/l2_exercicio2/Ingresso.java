@@ -7,12 +7,10 @@ public class Ingresso {
         this.valor = valor;
     }
 
-    // Método que imprime o valor do ingresso
     public void imprimeValor() {
         System.out.println("Valor do ingresso: R$ " + this.valor);
     }
 
-    // Método para obter o valor do ingresso
     public float getValor() {
         return this.valor;
     }
