@@ -12,12 +12,12 @@ public class Main {
         ingressoNormal.imprimeTipo();
         ingressoNormal.imprimeValor();
 
-        CamaroteInferior camaroteInferior = new CamaroteInferior(50.0f, 30.0f, "Setor A");
+        CamaroteInferior camaroteInferior = new CamaroteInferior(50.0f, 50.0f, "Setor A");
         camaroteInferior.imprimeValor();
         camaroteInferior.imprimeLocalizacao();
 
         // Testando a classe Camarote Superior
-        CamaroteSuperior camaroteSuperior = new CamaroteSuperior(50.0f, 30.0f, 20.0f);
+        CamaroteSuperior camaroteSuperior = new CamaroteSuperior(50.0f, 70.0f, 20.0f);
         System.out.println("Valor do ingresso Camarote Superior: R$ " + camaroteSuperior.getValor());
     }
 }
