@@ -15,4 +15,8 @@ public class CamaroteInferior extends Vip{
     public void imprimeLocalizacao() {
         System.out.println("Localização do Camarote Inferior: " + this.localizacao);
     }
+
+    public void ImprimeValor() {
+        System.out.println("Valor do Camarote Inferior: R$ " + getValor());
+    }
 }
