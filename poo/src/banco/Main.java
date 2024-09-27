@@ -1,8 +1,10 @@
 package banco;
 public class Main{
     public static void main(String[] args) {
-        Corrente conta1 = new Corrente(1, 1000, "Ana");
-        Especial conta2 = new Especial(2, 2000, "Joao", 5000);
+        
+        Clientes cli1 = new Clientes("Joice", "23433378921");
+        Corrente conta1 = new Corrente(1, 1000, cli1);
+        Especial conta2 = new Especial(2, 2000, cli1, 5000);
 
         conta1.debitar(2000);
         conta1.debitar(500);
@@ -18,9 +20,12 @@ public class Main{
         System.out.println("Seu saldo: " + conta2.getSaldo());
         System.out.println("----------------------------------------");
 
-        Poupanca conta3 = new Poupanca(3,1000, "Claudia",1000);
-        Investimento conta4 = new Investimento(4, 1000, "Cida", 8, 10);
-        Investimento conta5 = new Investimento(5, 1000, "Eva", 22, 5);
+        Clientes cli2 = new Clientes("Claudia", "23433391034");
+        Poupanca conta3 = new Poupanca(3,1000, cli2,1000);
+        Clientes cli3 = new Clientes("Cida", "23433382514");
+        Investimento conta4 = new Investimento(4, 1000, cli3, 8, 10);
+        Clientes cli4 = new Clientes("Eva", "2343338");
+        Investimento conta5 = new Investimento(5, 1000, cli4, 22, 5);
 
         conta3.debitar(1500);
         conta3.debitar(500);

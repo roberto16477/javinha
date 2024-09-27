@@ -2,9 +2,9 @@ package banco;
 public class Corrente {
     private int numero;
     private double saldo;
-    private String cliente;
+    private Clientes cliente;
 
-    public Corrente (int num, double sal,String cli){
+    public Corrente (int num, double sal,Clientes cli){
         this.numero = num;
         this.saldo = sal;
         this.cliente = cli;
@@ -37,12 +37,9 @@ public class Corrente {
         this.numero = numero;
     }
 
-    public String getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
+    @Override
+    public String toString(){
+        return ("Conta:" + this.numero + " Saldo:" + this.saldo + this.cliente);
     }
 
 }

@@ -2,7 +2,7 @@ package banco;
 public class Especial extends Corrente {
     private int limite;
 
-    public Especial(int num, double sal, String cli, int lim) {
+    public Especial(int num, double sal, Clientes cli, int lim) {
         super(num, sal, cli);
         this.limite = lim;
     }
