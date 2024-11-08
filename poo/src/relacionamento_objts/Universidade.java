@@ -1,4 +1,5 @@
-package relacionamento_objetos;
+package relacionamento_objts;
+
 public class Universidade {
     private String nome;
 

@@ -1,3 +1,5 @@
+package relacionamento_objts;
+
 public class Main {
     public static void main(String[] args) {
         // Criando objetos de Universidade
