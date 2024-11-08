@@ -1,4 +1,4 @@
-public class Universidades {
+public class Universidade {
     private String nome;
 
     public Universidade(String nome) {
