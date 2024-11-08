@@ -1,3 +1,4 @@
+package relacionamento_objetos;
 public class Departamento {
     private String nome;
     private Universidade universidade;

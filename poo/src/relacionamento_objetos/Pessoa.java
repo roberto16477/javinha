@@ -1,3 +1,4 @@
+package relacionamento_objetos;
 public class Pessoa {
     private String nome;
     private String dataNascimento;
