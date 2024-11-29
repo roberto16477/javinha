@@ -1,24 +1,26 @@
 package Time;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Escalacao {
-    private String dataPartida;
+    private LocalDate dataPartida;
     private Treinador treinador;
     private List<Jogador> jogadores;
 
-    public Escalacao(String dataPartida, Treinador treinador) {
+    public Escalacao(LocalDate dataPartida, Treinador treinador) {
         this.dataPartida = dataPartida;
         this.treinador = treinador;
         this.jogadores = new ArrayList<>();
     }
 
-    public String getDataPartida() {
+    public LocalDate getDataPartida() {
         return dataPartida;
     }
 
-    public void setDataPartida(String dataPartida) {
+    public void setDataPartida(LocalDate dataPartida) {
         this.dataPartida = dataPartida;
     }
 
@@ -38,8 +40,10 @@ public class Escalacao {
         jogadores.add(jogador);
     }
 
+    // Método para exibir a escalação
     public void exibirEscalacao() {
-        System.out.println("Data da Partida: " + dataPartida);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); // Formato desejado
+        System.out.println("Data da Partida: " + dataPartida.format(formatter));
         System.out.println("Treinador: " + treinador.getNome());
         System.out.println("Jogadores escalados:");
         for (Jogador jogador : jogadores) {
