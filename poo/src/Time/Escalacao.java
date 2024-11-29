@@ -34,12 +34,10 @@ public class Escalacao {
         return jogadores;
     }
 
-    // Método para adicionar um jogador à escalação
     public void adicionarJogador(Jogador jogador) {
         jogadores.add(jogador);
     }
 
-    // Método para exibir a escalação
     public void exibirEscalacao() {
         System.out.println("Data da Partida: " + dataPartida);
         System.out.println("Treinador: " + treinador.getNome());
