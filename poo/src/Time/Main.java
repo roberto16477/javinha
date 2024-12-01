@@ -30,14 +30,14 @@ public class Main {
         Escalacao escalacao2 = new Escalacao(LocalDate.of(2024, 11, 30), treinador2);
         escalacao2.adicionarJogador(jogador5);
         escalacao2.adicionarJogador(jogador6);
-        escalacao1.adicionarJogador(jogador7);
-        escalacao1.adicionarJogador(jogador8);
+        escalacao2.adicionarJogador(jogador7);
+        escalacao2.adicionarJogador(jogador8);
 
         // Exibindo escalações
-        System.out.println("=== Escalação 1 ===");
+        System.out.println("-------- Escalação 1 --------");
         escalacao1.exibirEscalacao();
 
-        System.out.println("\n=== Escalação 2 ===");
+        System.out.println("\n-------- Escalação 2 --------");
         escalacao2.exibirEscalacao();
     }
 }
