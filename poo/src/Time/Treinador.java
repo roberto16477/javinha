@@ -1,7 +1,7 @@
 package Time;
 
 public class Treinador extends Pessoa {
-    private int anosExperiencia; // Novo atributo
+    private int anosExperiencia;
 
     public Treinador(String nome, int anosExperiencia) {
         super(nome);

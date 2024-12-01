@@ -4,11 +4,9 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        // Criando treinadores
         Treinador treinador1 = new Treinador("Jürgen Klopp", 15);
         Treinador treinador2 = new Treinador("Pep Guardiola", 15);
 
-        // Criando jogadores
         Jogador jogador1 = new Jogador("Virgil Van Dijk", "Zagueiro");
         Jogador jogador2 = new Jogador("Macallister", "Meio-Campo");
         Jogador jogador3 = new Jogador("Mohamed Salah", "Atacante");
@@ -33,7 +31,6 @@ public class Main {
         escalacao2.adicionarJogador(jogador7);
         escalacao2.adicionarJogador(jogador8);
 
-        // Exibindo escalações
         System.out.println("-------- Escalação 1 --------");
         escalacao1.exibirEscalacao();
 

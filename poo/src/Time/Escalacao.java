@@ -40,9 +40,8 @@ public class Escalacao {
         jogadores.add(jogador);
     }
 
-    // Método para exibir a escalação
     public void exibirEscalacao() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); // Formato desejado
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         System.out.println("Data da Partida: " + dataPartida.format(formatter));
         System.out.println("Treinador: " + treinador.getNome());
         System.out.println("Jogadores escalados:");
